@@ -1,0 +1,604 @@
+---
+- # ====== List: Navigation Menu ===============================
+  id: 8094271037603993
+  identification: 
+    name: Navigation Menu
+
+  subscription: 
+    version-number: 28940944
+
+  source: 
+    type: Static Values
+
+  entries: 
+  - # ====== Entry: Home =========================================
+    id: 8106054332604167
+    label: 
+      label: Home
+
+    icon: 
+      image/icon-css-classes: fa-home
+
+    layout: 
+      sequence: 10
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:1:&APP_SESSION.::&DEBUG.:::'
+        page: 1 # Home
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Patient registration =========================
+    id: 8110211119610912
+    label: 
+      label: Patient registration
+
+    icon: 
+      image/icon-css-classes: fa-forms
+
+    layout: 
+      sequence: 20
+      parent-entry: Patient # 8136686423904295
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 3
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:3:&SESSION.::&DEBUG.::::'
+        page: 3 # Patient registration
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Patient ======================================
+    id: 8136686423904295
+    label: 
+      label: Patient
+
+    icon: 
+      image/icon-css-classes: fa-user
+
+    layout: 
+      sequence: 30
+
+    is-current: 
+      type: Target Page
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Patient Grid =================================
+    id: 8147735797042692
+    label: 
+      label: Patient Grid
+
+    icon: 
+      image/icon-css-classes: fa-table-pointer
+
+    layout: 
+      sequence: 40
+      parent-entry: Patient registration # 8110211119610912
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 7
+      - 8
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:4:&SESSION.::&DEBUG.::::'
+        page: 4 # Patient Grid
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Patient List =================================
+    id: 8192499079188857
+    label: 
+      label: Patient List
+
+    icon: 
+      image/icon-css-classes: fa-table
+
+    layout: 
+      sequence: 60
+      parent-entry: Patient # 8136686423904295
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 5
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:5:&SESSION.::&DEBUG.::::'
+        page: 5 # Patient List
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Doctor =======================================
+    id: 8199224158217700
+    label: 
+      label: Doctor
+
+    icon: 
+      image/icon-css-classes: fa-user-md
+
+    layout: 
+      sequence: 70
+
+    is-current: 
+      type: Target Page
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Doctor Registration ==========================
+    id: 8199880194224496
+    label: 
+      label: Doctor Registration
+
+    icon: 
+      image/icon-css-classes: fa-forms
+
+    layout: 
+      sequence: 80
+      parent-entry: Doctor # 8199224158217700
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 9
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:9:&SESSION.::&DEBUG.::::'
+        page: 9 # Doctor Registration
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Doctors ======================================
+    id: 8230016612370370
+    label: 
+      label: Doctors
+
+    icon: 
+      image/icon-css-classes: fa-user
+
+    layout: 
+      sequence: 90
+      parent-entry: Doctor Registration # 8199880194224496
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 10
+      - 18
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:10:&SESSION.::&DEBUG.::::'
+        page: 10 # Doctors
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: List of Doctors ==============================
+    id: 8246192280597857
+    label: 
+      label: List of Doctors
+
+    icon: 
+      image/icon-css-classes: fa-list
+
+    layout: 
+      sequence: 100
+      parent-entry: Doctor # 8199224158217700
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 11
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:11:&SESSION.::&DEBUG.::::'
+        page: 11 # List of Doctors
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Appointment ==================================
+    id: 8256033692906450
+    label: 
+      label: Appointment
+
+    icon: 
+      image/icon-css-classes: fa-calendar-user
+
+    layout: 
+      sequence: 110
+
+    is-current: 
+      type: Target Page
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Book an Appointment ==========================
+    id: 8258615836927810
+    label: 
+      label: Book an Appointment
+
+    icon: 
+      image/icon-css-classes: fa-forms
+
+    layout: 
+      sequence: 120
+      parent-entry: Appointment # 8256033692906450
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 12
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:12:&SESSION.::&DEBUG.::::'
+        page: 12 # Book an Appointment
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: List of Appointments =========================
+    id: 8612669374340507
+    label: 
+      label: List of Appointments
+
+    icon: 
+      image/icon-css-classes: fa-table
+
+    layout: 
+      sequence: 130
+      parent-entry: Appointment # 8256033692906450
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 13
+      - 14
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:13:&SESSION.::&DEBUG.::::'
+        page: 13 # List of Appointments
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Prescription =================================
+    id: 8643959650090400
+    label: 
+      label: Prescription
+
+    icon: 
+      image/icon-css-classes: fa-prescription
+
+    layout: 
+      sequence: 150
+
+    is-current: 
+      type: Target Page
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Give Prescription ============================
+    id: 8660121147601640
+    label: 
+      label: Give Prescription
+
+    icon: 
+      image/icon-css-classes: fa-file-prescription
+
+    layout: 
+      sequence: 160
+      parent-entry: Prescription # 8643959650090400
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 14
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:14:&SESSION.::&DEBUG.::::'
+        page: 14 # Give Prescription
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: List of Prescriptions ========================
+    id: 8673739807860543
+    label: 
+      label: List of Prescriptions
+
+    icon: 
+      image/icon-css-classes: fa-table
+
+    layout: 
+      sequence: 170
+      parent-entry: Prescription # 8643959650090400
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 15
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:15:&SESSION.::&DEBUG.::::'
+        page: 15 # List of Prescriptions
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Payment ======================================
+    id: 8732234481011096
+    label: 
+      label: Payment
+
+    icon: 
+      image/icon-css-classes: fa-money
+
+    layout: 
+      sequence: 190
+
+    is-current: 
+      type: Target Page
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Payment Grid =================================
+    id: 8851198375619951
+    label: 
+      label: Payment Grid
+
+    icon: 
+      image/icon-css-classes: fa-table-pointer
+
+    layout: 
+      sequence: 220
+      parent-entry: Payment # 8732234481011096
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 20
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:20:&SESSION.::&DEBUG.::::'
+        page: 20 # Payment Grid
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Doctor Dashboard =============================
+    id: 8860575068883670
+    label: 
+      label: Doctor Dashboard
+
+    icon: 
+      image/icon-css-classes: fa-home
+
+    layout: 
+      sequence: 230
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 21
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:21:&SESSION.::&DEBUG.::::'
+        page: 21 # Dashboard
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: PAYMENT FORM =================================
+    id: 9188198666977009
+    label: 
+      label: PAYMENT FORM
+
+    icon: 
+      image/icon-css-classes: fa-forms
+
+    layout: 
+      sequence: 270
+      parent-entry: Payment # 8732234481011096
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 25
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:25:&SESSION.::&DEBUG.::::'
+        page: 25 # PAYMENT
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Payment Report ===============================
+    id: 9203659756113600
+    label: 
+      label: Payment Report
+
+    icon: 
+      image/icon-css-classes: fa-table
+
+    layout: 
+      sequence: 280
+      parent-entry: Payment # 8732234481011096
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 30
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:30:&SESSION.::&DEBUG.::::'
+        page: 30 # Payment Report
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+- # ====== List: Navigation Bar ================================
+  id: 8095436745604060
+  identification: 
+    name: Navigation Bar
+
+  subscription: 
+    version-number: 26722148
+
+  source: 
+    type: Static Values
+
+  entries: 
+  - # ====== Entry: &APP_USER. ===================================
+    id: 8107486755604196
+    label: 
+      label: '&APP_USER.'
+
+    icon: 
+      image/icon-css-classes: fa-user
+
+    layout: 
+      sequence: 10
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: '#'
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+      2.: has-username
+
+  - # ====== Entry: --- ==========================================
+    id: 8107978597604198
+    label: 
+      label: '---'
+
+    layout: 
+      sequence: 20
+      parent-entry: '&APP_USER.' # 8107486755604196
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: separator
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+    server-side-condition: 
+      type: User is Authenticated (not public)
+
+  - # ====== Entry: Sign Out =====================================
+    id: 8108340747604200
+    label: 
+      label: Sign Out
+
+    icon: 
+      image/icon-css-classes: fa-sign-out
+
+    layout: 
+      sequence: 30
+      parent-entry: '&APP_USER.' # 8107486755604196
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: '&LOGOUT_URL.'
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+    server-side-condition: 
+      type: User is Authenticated (not public)
+

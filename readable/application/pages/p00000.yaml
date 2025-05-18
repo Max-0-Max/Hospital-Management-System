@@ -1,0 +1,46 @@
+---
+# ====== Page: Global Page ===================================
+id: 0
+identification: 
+  name: Global Page
+
+dynamic-actions: 
+- # ====== Dynamic Action: Menu ================================
+  id: 6018422274931912
+  identification: 
+    name: Menu
+
+  execution: 
+    sequence: 10
+    event-scope: Static
+
+  when: 
+    event: Page Load
+
+  actions: 
+  - # ====== Action: Execute JavaScript Code =====================
+    id: 6018549838931913
+    identification: 
+      action: Execute JavaScript Code
+
+    settings: 
+      code: |
+        
+        $("#t_TreeNav").on("treeviewactivatenode", function(e, ui) {
+            var n$ = $(e.originalEvent.target).closest(".a-TreeView-content");
+            if (ui.nodes.length > 0 && ui.nodes[0].link === "") {
+                if (n$.parent().hasClass("is-expandable")) {
+                    $(this).treeView("expand", n$)
+                } else if (n$.parent().hasClass("is-collapsible")) {
+                    $(this).treeView("collapse", n$)
+                }
+            }
+        });
+        
+
+    execution: 
+      sequence: 10
+      event: Menu # 6018422274931912
+      fire-when-event-result-is: True
+      fire-on-initialization: false
+

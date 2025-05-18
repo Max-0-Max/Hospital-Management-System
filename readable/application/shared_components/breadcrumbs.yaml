@@ -1,0 +1,217 @@
+---
+- # ====== Breadcrumb: Breadcrumb ==============================
+  id: 8093747743603989
+  identification: 
+    name: Breadcrumb
+
+  entries: 
+  - # ====== Entry: Home =========================================
+    id: 8093969108603990
+    identification: 
+      name: Home
+      page-number: 1
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:1:&APP_SESSION.::&DEBUG.:::'
+        page: 1 # Home
+
+  - # ====== Entry: Patient registration =========================
+    id: 8111170748610918
+    identification: 
+      name: Patient registration
+      page-number: 3
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:3:&APP_SESSION.::&DEBUG.:::'
+        page: 3 # Patient registration
+
+  - # ====== Entry: Patient List =================================
+    id: 8193326488188860
+    identification: 
+      name: Patient List
+      page-number: 5
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:5:&APP_SESSION.::&DEBUG.:::'
+        page: 5 # Patient List
+
+  - # ====== Entry: Doctor Registration ==========================
+    id: 8200791721224498
+    identification: 
+      name: Doctor Registration
+      page-number: 9
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:9:&APP_SESSION.::&DEBUG.:::'
+        page: 9 # Doctor Registration
+
+  - # ====== Entry: Doctors ======================================
+    id: 8238206930370392
+    identification: 
+      name: Doctors
+      page-number: 10
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:10:&APP_SESSION.::&DEBUG.:::'
+        page: 10 # Doctors
+
+  - # ====== Entry: List of Doctors ==============================
+    id: 8247085567597860
+    identification: 
+      name: List of Doctors
+      page-number: 11
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:11:&APP_SESSION.::&DEBUG.:::'
+        page: 11 # List of Doctors
+
+  - # ====== Entry: Book an Appointment ==========================
+    id: 8259512939927825
+    identification: 
+      name: Book an Appointment
+      page-number: 12
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:12:&APP_SESSION.::&DEBUG.:::'
+        page: 12 # Book an Appointment
+
+  - # ====== Entry: List of Appointments =========================
+    id: 8613552800340520
+    identification: 
+      name: List of Appointments
+      page-number: 13
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:13:&APP_SESSION.::&DEBUG.:::'
+        page: 13 # List of Appointments
+
+  - # ====== Entry: Give Prescription ============================
+    id: 8661043576601645
+    identification: 
+      name: Give Prescription
+      page-number: 14
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:14:&APP_SESSION.::&DEBUG.:::'
+        page: 14 # Give Prescription
+
+  - # ====== Entry: List of Prescriptions ========================
+    id: 8674678337860545
+    identification: 
+      name: List of Prescriptions
+      page-number: 15
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:15:&APP_SESSION.::&DEBUG.:::'
+        page: 15 # List of Prescriptions
+
+  - # ====== Entry: Payment Grid =================================
+    id: 8852087858619967
+    identification: 
+      name: Payment Grid
+      page-number: 20
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:20:&APP_SESSION.::&DEBUG.:::'
+        page: 20 # Payment Grid
+
+  - # ====== Entry: Dashboard ====================================
+    id: 8861410490883704
+    identification: 
+      name: Dashboard
+      page-number: 21
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:21:&SESSION.::&DEBUG.:::'
+        page: 21 # Dashboard
+
+  - # ====== Entry: PAYMENT ======================================
+    id: 9189014779977010
+    identification: 
+      name: PAYMENT
+      page-number: 25
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:25:&APP_SESSION.::&DEBUG.:::'
+        page: 25 # PAYMENT
+
+  - # ====== Entry: Payment Report ===============================
+    id: 9204519625113600
+    identification: 
+      name: Payment Report
+      page-number: 30
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:30:&APP_SESSION.::&DEBUG.:::'
+        page: 30 # Payment Report
+
+  - # ====== Entry: Patient Grid =================================
+    id: 9270443712927125
+    identification: 
+      name: Patient Grid
+      page-number: 4
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:4:&APP_SESSION.::&DEBUG.:::'
+        page: 4 # Patient Grid
+

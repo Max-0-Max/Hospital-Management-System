@@ -1,0 +1,9 @@
+---
+- # ====== Install Script: Hospital Management System ==========
+  id: 9273717981213470
+  identification: 
+    name: Hospital Management System
+
+  execution: 
+    sequence: 10
+

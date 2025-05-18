@@ -1,0 +1,111 @@
+---
+- # ====== List of Values: PATIENT LIST ========================
+  id: 8253305592802237
+  identification: 
+    name: PATIENT LIST
+
+  subscription: 
+    version-number: 26824198
+
+  source: 
+    location: Local Database
+    type: Table / View
+    table-owner: Parsing Schema
+    table-name: MAXWELL_PATIENTS
+
+  column-mapping: 
+    return: PATIENT_ID
+    display: NAME
+    default-sort: NAME
+    sort-direction: Ascending (Nulls Last)
+
+- # ====== List of Values: DOCTOR LIST =========================
+  id: 8253669289811192
+  identification: 
+    name: DOCTOR LIST
+
+  subscription: 
+    version-number: 26824630
+
+  source: 
+    location: Local Database
+    type: Table / View
+    table-owner: Parsing Schema
+    table-name: MAXWELL_DOCTORS
+
+  column-mapping: 
+    return: DOCTOR_ID
+    display: NAME
+    default-sort: NAME
+    sort-direction: Ascending (Nulls Last)
+
+- # ====== List of Values: STATUS ==============================
+  id: 8610254816309839
+  identification: 
+    name: STATUS
+
+  subscription: 
+    version-number: 27923905
+
+  source: 
+    location: Local Database
+    type: Table / View
+    table-owner: Parsing Schema
+    table-name: MAXWELL_APPOINTMENTS
+
+  column-mapping: 
+    return: APPOINTMENT_ID
+    display: STATUS
+    default-sort: STATUS
+    sort-direction: Ascending (Nulls Last)
+
+- # ====== List of Values: APPOINTMENT =========================
+  id: 8679740601917056
+  identification: 
+    name: APPOINTMENT
+
+  subscription: 
+    version-number: 28051225
+
+  source: 
+    location: Local Database
+    type: SQL Query
+    sql-query: |
+      SELECT 
+        p.NAME || ' - ' || TO_CHAR(a.APPOINTMENT_DATE, 'DD-MON-YYYY') AS display_value,
+        a.APPOINTMENT_ID AS return_value
+      FROM MAXWELL_APPOINTMENTS a
+      JOIN MAXWELL_PATIENTS p ON a.PATIENT_ID = p.PATIENT_ID
+      ORDER BY a.APPOINTMENT_ID;
+      
+
+  column-mapping: 
+    return: RETURN_VALUE
+    display: DISPLAY_VALUE
+    default-sort: Use Order By from Query
+
+- # ====== List of Values: PAYMENT =============================
+  id: 9200290034075414
+  identification: 
+    name: PAYMENT
+
+  subscription: 
+    version-number: 28875247
+
+  source: 
+    location: Local Database
+    type: SQL Query
+    sql-query: |
+      SELECT 
+       TO_CHAR(a.APPOINTMENT_DATE, 'DD-MON-YYYY') AS display_value,
+        a.APPOINTMENT_ID AS return_value
+      FROM MAXWELL_APPOINTMENTS a
+      JOIN MAXWELL_PATIENTS p ON a.PATIENT_ID = p.PATIENT_ID
+      ORDER BY a.APPOINTMENT_ID;
+      
+
+  column-mapping: 
+    return: RETURN_VALUE
+    display: DISPLAY_VALUE
+    default-sort: Use Order By from Query
+
